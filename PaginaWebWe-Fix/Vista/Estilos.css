@@ -1,0 +1,83 @@
+/*font family*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/*paleta de colores*/
+:root {
+  --main-blue: #001e6c;
+  --main-light-blue: #42459b;
+  --main-dark-blue: #000040;
+  --main-orange: #e8630a;
+  --main-light-orange: #ff9441;
+  --main-dark-orange: #af3300;
+}
+
+/*resets*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos generales*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/*estilos de navbar y footer*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-blue);
+    position: fixed;
+}
+
+.navbar{
+  margin: 0%;
+  padding: 0%;
+}
+
+h1{
+  font-family: "Lato";
+   color: whitesmoke;
+   font-weight: bolder;
+   font-size: xx-large;
+}
+
+ul{
+    font-size:xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0em;
+}
+
+li{
+    padding: 0.5em;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 600;
+}
+
+a{
+text-decoration: none;
+}
+
+.logo{
+    height: 50px;
+    width: 40px;
+    margin: 1em;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-blue);
+    position: absolute;
+    bottom: 0;
+}
