@@ -40,9 +40,15 @@ header{
 
 h1{
   font-family: "Lato";
-   color: whitesmoke;
+   color: #f5f5f5;
    font-weight: bolder;
    font-size: xx-large;
+}
+
+.logo{
+    height: 50px;
+    width: 40px;
+    margin: 1em;
 }
 
 ul{
@@ -65,10 +71,10 @@ a{
 text-decoration: none;
 }
 
-.logo{
-    height: 50px;
-    width: 40px;
-    margin: 1em;
+a img.loginImg{
+  width: 30px;
+  height: 30px;
+  margin: 0px 6px 2px 3px;
 }
 
 footer{
