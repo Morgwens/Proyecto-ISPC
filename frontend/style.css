@@ -1,0 +1,8 @@
+/*** Módulos ***/
+@import url('./estilos/normalize.css');
+@import url('./estilos/footer.css');
+@import url('./estilos/header.css');
+@import url('./estilos/home.css');
+@import url('./estilos/login.css');
+@import url('./estilos/registroClientes.css');
+@import url('./estilos/registroProfesionales.css');
