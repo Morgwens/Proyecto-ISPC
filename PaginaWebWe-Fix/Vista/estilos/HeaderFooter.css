@@ -20,6 +20,8 @@
 /*estilos generales*/
 body {
   font-family: "Lato", sans-serif;
+  position: relative;
+  padding-bottom: 6em;
 }
 
 /*estilos de navbar y footer*/
