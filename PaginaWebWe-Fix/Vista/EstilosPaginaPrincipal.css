@@ -117,7 +117,12 @@ h1 {
   font-weight: bolder;
   font-size: xx-large;
 }
-
+#footer{
+  color: white;
+}
+#term-privac{
+  color: white;
+}
 h3 {
   font-family: "Lato";
   color: #000040;
