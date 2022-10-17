@@ -1,5 +1,5 @@
 /*font family*/
-@import url("https://res.cloudinary.com/dtrsxymgq/image/upload/c_scale,h_1000,w_5000/v1666045019/ISPC/fondo_index_bfonn5.jpg");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /*paleta de colores*/
 :root {
@@ -12,47 +12,93 @@
 }
 
 /*resets*/
-* {
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /*estilos generales*/
-body {
-  font-family: "Lato", sans-serif;
+body{
+    font-family: 'Lato', sans-serif;
 }
 
 /*estilos de navbar y footer*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: var(--main-blue);
-  position: fixed;
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-blue);
+    position: fixed;
 }
 
-.navbar {
+.navbar{
   margin: 0%;
   padding: 0%;
 }
 
-h1.navbar,
-h2.footer {
+h1.navbar, h2.footer{
   font-family: "Lato";
-  color: #f5f5f5;
-  font-weight: bolder;
-  font-size: xx-large;
+   color: #f5f5f5;
+   font-weight: bolder;
+   font-size: xx-large;
 }
 
-a .navbar .logo {
-  height: 50px;
-  width: 40px;
-  margin: 1em;
+a .navbar .logo{
+    height: 50px;
+    width: 40px;
+    margin: 1em;
 }
 
-ul.nav {
+ul.nav{
+    font-size:xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0em;
+}
+
+li.navbar, li.footer{
+    padding: 0.5em;
+    color: whitesmoke;
+    font-size:medium;
+    font-weight: 600;
+    list-style: none;
+}
+
+a.navbar, a.footer{
+text-decoration: none;
+}
+
+a img.loginImg{
+  width: 30px;
+  height: 30px;
+  margin: 0px 6px 2px 3px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-blue);
+    position: absolute;
+    bottom: 0;
+    margin: 0%;
+    padding: 0%;
+}
+
+p.footer {
+  color: whitesmoke;
+  font-weight: 400;
+  margin: 8px 0px 8px 8px;
+  padding: 0px;
+}
+
+ul.footer {
   font-size: xx-large;
   display: flex;
   flex-direction: row;
@@ -61,35 +107,8 @@ ul.nav {
   margin: 0em;
 }
 
-li.navbar,
-li.footer {
-  padding: 0.5em;
+i {
   color: whitesmoke;
-  font-size: medium;
-  font-weight: 600;
-  list-style: none;
-}
-
-a.navbar,
-a.footer {
-  text-decoration: none;
-}
-
-a img.loginImg {
-  width: 30px;
-  height: 30px;
-  margin: 0px 6px 2px 3px;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: var(--main-blue);
-  position: absolute;
-  bottom: 0;
-  margin: 0%;
-  padding: 0%;
+  margin: 8px 8px 8px 8px;
+  padding: 0px;
 }
