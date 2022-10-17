@@ -149,15 +149,37 @@ a img.loginImg {
   margin: 0px 6px 2px 3px;
 }
 
-footer {
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-blue);
+    position: absolute;
+    bottom: 0;
+    margin: 0%;
+    padding: 0%;
+}
+
+p.footer {
+  color: whitesmoke;
+  font-weight: 400;
+  margin: 8px 0px 8px 8px;
+  padding: 0px;
+}
+
+ul.footer {
+  font-size: xx-large;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: var(--main-blue);
-  position: absolute;
-  bottom: 0;
-  margin: 0%;
-  padding: 0%;
+  list-style: none;
+  margin: 0em;
+}
+
+i {
+  color: whitesmoke;
+  margin: 8px 8px 8px 8px;
+  padding: 0px;
 }
