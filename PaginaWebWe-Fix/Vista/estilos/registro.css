@@ -1,8 +1,16 @@
 .formulario {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
   }
+
+.select {
+  display: inline-flex;
+  flex-direction: row;
+  width: 70%
+  align-items: center;
+  
+}
   
   .formulario__label {
     font-size: 0.75rem;
