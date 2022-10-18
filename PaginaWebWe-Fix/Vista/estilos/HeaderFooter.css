@@ -1,5 +1,5 @@
 /*font family*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /*paleta de colores*/
 :root {
@@ -20,6 +20,8 @@
 /*estilos generales*/
 body{
     font-family: 'Lato', sans-serif;
+      position: relative;
+  padding-bottom:6em;
 }
 
 /*estilos de navbar y footer*/
@@ -85,7 +87,7 @@ footer{
     align-items: center;
     width: 100%;
     background-color: var(--main-blue);
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin: 0%;
     padding: 0%;
