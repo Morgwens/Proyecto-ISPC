@@ -32,13 +32,3 @@ body {
   color: var(--main-dark-blue);
   padding-bottom: 6em;
 }
-
-a {
-  color: #47b2e4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #73c5eb;
-  text-decoration: none;
-}
