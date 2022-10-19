@@ -1,20 +1,10 @@
-@import url('./HeaderFooter.css');
-
-body {
-  position: relative;
-  padding-bottom:6em;
-}
-
-header { /* * * * * * */
-  z-index: 100;
-}
+@import url('./style.css');
 
 .contacto {
   display: flex;
   /* min-height: 180vh;
   max-height: 180vh; */
   overflow: hidden;
-  padding-top:6em;
 }
 
 .contacto__container {
