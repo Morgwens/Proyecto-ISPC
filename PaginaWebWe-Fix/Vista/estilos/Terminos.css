@@ -1,14 +1,4 @@
-@import url("HeaderFooter.css");
-
-/*paleta de colores*/
-:root {
-  --main-blue: #001e6c;
-  --main-light-blue: #42459b;
-  --main-dark-blue: #000040;
-  --main-orange: #e8630a;
-  --main-light-orange: #ff9441;
-  --main-dark-orange: #af3300;
-}
+@import url(./style.css);
 
 section.terminos{
 display: flex;
@@ -25,10 +15,4 @@ p{
   column-count: 2;
   padding: 2px 10px 2px 10px;
   font-size: small;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  color: var(--main-dark-blue);
-  padding-bottom: 6em;
 }
