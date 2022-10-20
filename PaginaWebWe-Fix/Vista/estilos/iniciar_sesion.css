@@ -1,4 +1,4 @@
-@import url('../EstilosPaginaPrincipal.css');
+@import url('./style.css');
 
 .login {
   display: flex;
