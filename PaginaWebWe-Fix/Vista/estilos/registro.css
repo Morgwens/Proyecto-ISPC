@@ -1,3 +1,5 @@
+@import url(./style.css);
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -7,9 +9,8 @@
 .select {
   display: inline-flex;
   flex-direction: row;
-  width: 70%
-  align-items: center;
-  
+  width: 70%;
+  justify-content: center;
 }
   
   .formulario__label {

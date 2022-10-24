@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión - We Fix</title>
+    <link rel="stylesheet" href="./estilos/iniciar_sesion.css"/>
+  </head>
+  <body>
+    <div class="login">
+      <!--Formulario-->
+      <div class="login__container">
+        <div class="logo">
+          <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
+        </div>
+        <form class="formulario">
+          <label for="nombre" class="formulario__label"
+            ><strong>CORREO ELECTRÓNICO</strong></label
+          >
+          <input
+            type="text"
+            placeholder="Correo electrónico"
+            name="nombre"
+            required
+            class="formulario__input"
+          />
+          <label for="password" class="formulario__label"
+            ><strong>CONTRASEÑA</strong></label
+          >
+          <input
+            type="password"
+            placeholder="Contraseña"
+            name="password"
+            required
+            class="formulario__input-password"
+          />
+          <div class="formulario__captions">
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Recordar datos del usuario
+            </label>
+            <span><a href="#"> Olvidé mi contraseña</a></span>
+          </div>
+          <button type="submit" class="formulario__button">INICIAR SESIÓN</button>
+          <h6 class="formulario__registrarse">
+            ¿Todavía no tenés una cuenta? <a href="./registro.html">Registrate gratis</a>
+          </h6>
+        </form>
+      </div>
+      <!--Imagen-->
+
+      <img
+        src="./assets/login-hero.png"
+        alt="Imagen de un profesional"
+        class="login__img"
+      />
+    </div>
+  </body>
+</html>
