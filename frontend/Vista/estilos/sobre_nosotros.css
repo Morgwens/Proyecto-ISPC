@@ -2,12 +2,8 @@
 
 /* section */
 section {
-  padding: 60px 0;
+  padding: 60px;
   overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f3f5fa;
 }
 
 .section-title {
@@ -18,7 +14,6 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -63,6 +58,6 @@ a:hover {
 }
 /* end section */
 
-footer{
+footer {
   position: fixed;
 }
