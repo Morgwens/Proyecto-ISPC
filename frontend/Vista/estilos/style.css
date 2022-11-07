@@ -15,9 +15,9 @@
 }
 
 /*resets generales*/
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
 body {
@@ -25,4 +25,3 @@ body {
   position: relative;
   padding-bottom: 6em;
 }
-

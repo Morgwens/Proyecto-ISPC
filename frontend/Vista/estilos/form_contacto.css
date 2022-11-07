@@ -1,5 +1,9 @@
 @import url('./style.css');
 
+body {
+  padding-bottom: 60px;
+}
+
 .contacto {
   display: flex;
   /* min-height: 180vh;
@@ -14,8 +18,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   padding: 4.375rem;
+  box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.30);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.75);
 }
 
 .logo {
@@ -25,7 +32,7 @@
 .formulario {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width:100%;
 }
 
 .formulario__label {
@@ -60,8 +67,16 @@ textarea {
   font-weight: bold;
 }
 
+.contacto__img {
+  width: 50%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
-  .login__img {
-      display: none
+  .contacto__img {
+    display: none
+  }
+  .contacto__container {
+    width: 100%;
   }
 }
