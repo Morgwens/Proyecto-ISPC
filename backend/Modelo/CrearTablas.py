@@ -10,7 +10,7 @@ def crearTabla(mySql_Create_Table_Query):
         print("tabla productos creada con exito,,!! ")
 
     except mysql.connector.Error as error:
-        print("Failed to create table in MySQL: {}".format(error))
+        print("Falla en crerar tabla MySQL: {}".format(error))
     finally:
         if connection.is_connected():
             cursor.close()
