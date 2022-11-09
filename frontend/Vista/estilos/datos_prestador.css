@@ -1,0 +1,28 @@
+.titulo{
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-md-3{
+    text-indent: 0.5em;
+      
+}
+  .col-md-5 {
+    text-indent: 2em;
+    border: 1px solid rgb(13, 13, 13);
+   border-radius: 5%;
+   background-color:rgba(255, 255, 255, 0.416);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.foto{
+     border: 1px ;
+    border-radius: 50%;
+}
+body{
+    background-image: url(../assets/banner.png);
+    background-repeat: no-repeat;
+    background-position-y: 5.1em;
+}
