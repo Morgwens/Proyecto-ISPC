@@ -36,7 +36,7 @@ def registrarCliente(id_cliente, nombreApellido, fechaNacimiento, genero, email,
             
 registrarCliente(1, 'Soria Ruben', '1995-03-09', 'masculino', 'shshs@hshs.com', 'Consglio 612', 1232134, '2022-11-05 22:16:23', 1, "lalala", "8")
         
-registrarCliente(2, 'Manuel', '1995-03-09', 'masculino', 'shshs@hshs.com', 'Consglio 612', 1232134, '2022-11-05 22:16:23', 2, "lalala", "8")
+registrarCliente(2, 'Manuel', '1995-03-09', 'masculino', 'hola@hshs.com', 'Consglio 612', 1232134, '2022-11-05 22:16:23', 2, "lalala", "8")
 
-registrarCliente(3, 'Esteban', '1995-03-09', 'masculino', 'shshs@hshs.com', 'Consglio 612', 1232134, '2022-11-05 22:16:23', 3, "lalala", "8")
+registrarCliente(3, 'Esteban', '1995-03-09', 'masculino', 'chau@hshs.com', 'Consglio 612', 1232134, '2022-11-05 22:16:23', 3, "lalala", "8")
               
