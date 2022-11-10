@@ -1,0 +1,27 @@
+/*estilos*/
+@import url('./header_footer.css');
+
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/*paleta de colores*/
+:root {
+  --main-blue: #001e6c;
+  --main-light-blue: #42459b;
+  --main-dark-blue: #000040;
+  --main-orange: #e8630a;
+  --main-light-orange: #ff9441;
+  --main-dark-orange: #af3300;
+}
+
+/*resets generales*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  padding-bottom: 6em;
+}
