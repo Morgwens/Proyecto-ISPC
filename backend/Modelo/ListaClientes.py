@@ -1,10 +1,10 @@
 import mysql.connector
 
-def prestadores():
+def clientes():
     try:
         connection=mysql.connector.connect(host='localhost',database='melina',user='root',password='rosso504')
 	
-        mySql_query = "SELECT * FROM prestador JOIN fichaprestador ON prestador.id_prestador = fichaprestador.id_UsuarioPrestador"
+        mySql_query = "SELECT * FROM cliente JOIN fichacliente ON cliente.id_cliente = fichacliente.id_UsuarioCliente"
   
         cursor = connection.cursor()
         cursor.execute(mySql_query)
@@ -14,7 +14,7 @@ def prestadores():
             print(row)
 
     except mysql.connector.Error as error:
-        print("Falla en la busqueda de todos los prestadores {}".format(error))
+        print("Falla en la busqueda de todos los clientes {}".format(error))
 
     finally:
         if connection.is_connected():
@@ -23,4 +23,4 @@ def prestadores():
             print("MySQL connection is closed")
 
 
-prestadores()
+clientes()
