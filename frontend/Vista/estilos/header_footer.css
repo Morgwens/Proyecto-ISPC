@@ -10,10 +10,6 @@ header {
   background-color: var(--main-blue);
 }
 
-#check {
-  display: none;
-}
-
 header label {
   display: none;
   width: 50px;
@@ -28,8 +24,8 @@ header label:hover {
 }
 
 .navbar {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 h1.navbar,
@@ -91,15 +87,15 @@ footer {
   background-color: var(--main-blue);
   position: absolute;
   bottom: 0;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 p.footer {
   color: whitesmoke;
   font-weight: 400;
   margin: 8px 0px 8px 8px;
-  padding: 0px;
+  padding: 0;
 }
 
 ul.footer {
@@ -108,13 +104,17 @@ ul.footer {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  margin: 0em;
+  margin: 0;
 }
 
 i {
   color: whitesmoke;
   margin: 8px 8px 8px 8px;
-  padding: 0px;
+  padding: 0;
+}
+
+.sidebar-on {
+  left: -500px;
 }
 
 @media (max-width: 768px) {
@@ -126,6 +126,10 @@ i {
     display: none;
   }
 
+  .sidebar-on{
+    display: none;
+  }
+  
   ul.nav {
     position: absolute;
     z-index: 10;
@@ -134,23 +138,18 @@ i {
     width: 40%;
     top: 80px;
     transition: all 0.5s;
-    right: 0;
   }
 
   li.navbar {
     border-top: 1px solid white;
     width: 100%; 
     height: 4rem;
-  }
-  
-  #check:checked ~ ul.nav {
-    background: blueviolet;
-  }
-  
+  } 
 
   footer {
     height: auto;
   }
+  
   ul.footer {
     flex-direction: column;
   }
