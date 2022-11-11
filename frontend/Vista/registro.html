@@ -38,65 +38,68 @@
           </a>
         </ul>
       </div>
-
+      
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
     
-    <div class="registro" align="center">
-      <div class="registro__container">
-        <div class="logo">
-          <img src="./assets/logo-index.png">
-        </div>
-        <h4 class="formulario_title"><strong>Unite a nuestra comunidad ¡Registrate ahora!</strong></h4>
-        
-        <br>
-
-        <form class="formulario" id="form">
-          <label for="nombre" class="formulario__label">
-            <strong>NOMBRE DE USUARIO</strong></label>
-          <input 
-            type="text" 
-            placeholder="Ingresa un nombre" 
-            name="name"    
-            class="formulario__input" id="nombre" />
-          <label for="nombre" class="formulario__label">
-            <strong>CORREO ELECTRÓNICO</strong></label>
-          <input 
-            type="text" 
-            placeholder="Ingresa tu e-mail" 
-            name="nombre"  
-            class="formulario__input"  id="email"/>
-          <label for="password" class="formulario__label">
-            <strong>CONTRASEÑA</strong></label>
-          <input 
-            type="password" 
-            placeholder="Escribe tu contraseña" 
-            name="password" 
-            required 
-            class="formulario__input" id="pass"/>
-          <label for="password" class="formulario__label">
-            <strong>REPITE CONTRASEÑA</strong></label>
-          <input 
-            type="password" 
-            placeholder="Repite tu contraseña" 
-            name="password" 
-            required class="formulario__input" requiered/>
-        
-          <h4>Seleccione su categoría:</h4>
-          <div class="select">
-            <input type="radio" id="age1" name="age" value="40">
-            <label for="age1" class="radio-p">Cliente</label><br>
+    <main>
+      <div class="registro" align="center">
+        <div class="registro__container">
+          <div class="logo">
+            <img src="./assets/logo-index.png">
           </div>
-          <div class="select">
-            <input type="radio" id="age2" name="age" value="40">
-            <label for="age2" class="radio-p">Prestador</label><br>
-          </div><br><br>
-          <button type="submit" class="formulario__button" id="submit">SIGUIENTE</button>
-          <p class="warning" id="warning"></p>
-        </form>     
-      </div>
-    </div>
+          <h4 class="formulario_title"><strong>Unite a nuestra comunidad ¡Registrate ahora!</strong></h4>
+          
+          <br>
 
+          <form class="formulario">
+            <label for="nombre" class="formulario__label">
+              <strong>NOMBRE DE USUARIO</strong></label>
+            <input 
+              type="text" 
+              placeholder="Ingresa un nombre" 
+              name="name" 
+              required 
+              class="formulario__input" />
+            <label for="nombre" class="formulario__label">
+              <strong>CORREO ELECTRÓNICO</strong></label>
+            <input 
+              type="text" 
+              placeholder="Ingresa tu e-mail" 
+              name="nombre" 
+              required 
+              class="formulario__input" />
+            <label for="password" class="formulario__label">
+              <strong>CONTRASEÑA</strong></label>
+            <input 
+              type="password" 
+              placeholder="Escribe tu contraseña" 
+              name="password" 
+              required 
+              class="formulario__input" />
+            <label for="password" class="formulario__label">
+              <strong>REPITE CONTRASEÑA</strong></label>
+            <input 
+              type="password" 
+              placeholder="Repite tu contraseña" 
+              name="password" 
+              required class="formulario__input" />
+          
+            <h4>Seleccione su categoría:</h4>
+            <div class="select">
+              <input type="radio" id="age1" name="age" value="40">
+              <label for="age1" class="radio-p">Cliente</label><br>
+            </div>
+            <div class="select">
+              <input type="radio" id="age2" name="age" value="40">
+              <label for="age2" class="radio-p">Prestador</label><br>
+            </div><br><br>
+            <button type="submit" class="formulario__button">SIGUIENTE</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    
     <footer>
       <p class="footer">&copy; WeFix 2022</p>
 
@@ -122,12 +125,8 @@
       </div>
     </footer>
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
-    
-  </body>    
-  <script src="registro.js"></script>
-</html>
-
     <script src="header.js"></script>
+    <script src="registro.js"></script>
   </body>
 </html>
 
