@@ -78,3 +78,12 @@ body {
     display: none
   }
 }
+
+#warning{
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  color: var(--main-blue);
+  padding-top: 20px;
+  font-weight: 500;
+}
