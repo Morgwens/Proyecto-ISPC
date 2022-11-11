@@ -37,170 +37,331 @@
         </ul>
       </div>
 
-      <input type="checkbox" id="check">
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
 
     <div class="banner">
     </div>
 
-    <div class="central">
-      <div class="buscador">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-search"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+    <main>
+      <div class="central">
+        <div class="buscador__inicio">
+          <input
+            class="inputBuscador"
+            type="text"
+            placeholder="Buscar Servicio"
           />
-        </svg>
-        <input
-          class="inputBuscador"
-          type="text"
-          placeholder="Buscar Servicio"
-        />
-      </div><br>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+            type="submit"
+            onclick="buscarServicio()"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" 
+            />
+          </svg>
+          <h5 style="text-align: center; font-size: 0.875rem; margin-top: 0.7rem;">Ingresa alguna de las categorías</h5>
+        </div>
 
-      <h2 class="index">Bienvenido Carlos ¿Qué estás buscando?</h2>
-      <div class="iconos__inicio">
-        <div class="un-icono">
-          <img
-            class="logo-servicio"
-            src="./assets/enchufe.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Electricidad</h4>
+        <h2 class="index">Bienvenido Carlos ¿Qué estás buscando?</h2>
+
+        <div class="iconos__inicio">
+          <div class="un-icono" onclick="verElectricidad()">
+            <img class="logo-servicio" src="./assets/enchufe.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Electricidad</h4>
+          </div>
+          <div class="un-icono" onclick="verGas()">
+            <img class="logo-servicio" src="./assets/fuego.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Gas</h4>
+          </div>
+          <div class="un-icono" onclick="verFontaneria()">
+            <img class="logo-servicio" src="./assets/herramientas.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Fontanería</h4>
+          </div>
+          <div class="un-icono" onclick="verPintura()">
+            <img class="logo-servicio" src="./assets/rodillo-de-pintura.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Pintura</h4>
+          </div>
+          <div class="un-icono" onclick="verCarpinteria()">
+              <img class="logo-servicio" src="./assets/serrucho.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Carpintería</h4>
+          </div>
+          <div class="un-icono" onclick="verJardin()">
+            <img class="logo-servicio" src="./assets/cortacesped.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Jardín</h4>
+          </div>
         </div>
-        <div class="un-icono">
-          <img
-            class="logo-servicio"
-            src="./assets/fuego.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Gas</h4>
-        </div>
-        <div class="un-icono">
-          <img
-            class="logo-servicio"
-            src="./assets/herramientas.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Fontanería</h4>
-        </div>
-        <div class="un-icono">
-          <img
-            class="logo-servicio"
-            src="./assets/rodillo-de-pintura.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Pintura</h4>
-        </div>
-        <div class="un-icono">
+
+        <div class="cartas">
+          <div class="carta-prestador serv-carpinteria">
+            <img class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Jose Villegas</h3>
+                <p>Carpintería</p>
+              </div>
+              <div class="valoración">
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-electricidad">
             <img
-            class="logo-servicio"
-            src="./assets/serrucho.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Carpintería</h4>
-        </div>
-        <div class="un-icono">
-          <img
-            class="logo-servicio"
-            src="./assets/cortacesped.png"
-            alt="logo-Serrucho"
-          />
-          <h6 class="titulo-icon">Jardín</h4>
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Juan Perez</h3>
+                <p>Electricidad</p>
+              </div>
+              
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-pintura">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Diego Lopez</h3>
+                <p>Pintura</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-gas">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Esteban Alvares</h3>
+                <p>Gas</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-electricidad">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Diego Sosa</h3>
+                <p>Electricidad</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-gas">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Lucas Rodriguez</h3>
+                <p>Gas</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-fontaneria">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Fernando Castillo</h3>
+                <p>Fontanería</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-jardin">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>René Pomarola</h3>
+                <p>Jardín</p>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-carpinteria">
+            <img class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Mario Cejas</h3>
+                <p>Carpintería</p> 
+              </div>
+              <div class="valoración">
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="cartas">
-        <div class="carta-prestador">
-          <img
-            class="foto-prestador"
-            src="./assets/fotoPrestador.jpg"
-            alt="foto-prestador"
-          />
-          <div class="datosCarta">
-            <h3>Jose Villegas</h3>
-            <p>Carpintero</p>
-            <div class="valoración">
-              <p>Valoración:</p>
-              <img
-                class="logo-estrellas"
-                src="./assets/clasificacion.png"
-                alt="logo-estrellas"
-              />
-            </div>
-          </div>
-          <div class="contactar">
-            <img 
-              class="logo-contacto" 
-              src="./assets/phone.png" 
-              alt="logo-contacto"
-            >
-            <p>Contactar</p>
-          </div>
-        </div>
-        <div class="carta-prestador">
-          <img
-            class="foto-prestador"
-            src="./assets/fotoPrestador.jpg"
-            alt="foto-prestador"
-          />
-          <div class="datosCarta">
-            <h3>Juan Perez</h3>
-            <p>Electricista</p>
-            <div>
-              <p>Valoración:</p>
-              <img
-                class="logo-estrellas"
-                src="./assets/clasificacion.png"
-                alt="logo-estrellas"
-              />
-            </div>
-          </div>
-          <div class="contactar">
-            <img 
-              class="logo-contacto" 
-              src="./assets/phone.png" 
-              alt="logo-contacto"
-            >
-            <p>Contactar</p>
-          </div>
-        </div>
-        <div class="carta-prestador">
-          <img
-            class="foto-prestador"
-            src="./assets/fotoPrestador.jpg"
-            alt="foto-prestador"
-          />
-          <div class="datosCarta">
-            <h3>Diego Lopez</h3>
-            <p>Pintor</p>
-            <div>
-              <p>Valoración:</p>
-              <img
-                class="logo-estrellas"
-                src="./assets/clasificacion.png"
-                alt="logo-estrellas"
-              />
-            </div>
-          </div>
-          <div class="contactar">
-            <img 
-              class="logo-contacto" 
-              src="./assets/phone.png" 
-              alt="logo-contacto"
-            >
-            <p>Contactar</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </main>
+   
     <footer>
       <p class="footer">&copy; WeFix 2022</p>
 
@@ -226,9 +387,8 @@
       </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/53bd38247d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

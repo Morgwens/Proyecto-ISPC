@@ -34,69 +34,70 @@
         </ul>
       </div>
 
-      <input type="checkbox" id="check">
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
 
-    <div class="contacto">
-      <div class="contacto__container">
-        <div class="logo">
-          <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
-        </div>
-        
-        <form class="formulario" name="formulario" onsubmit="return validarForm()">
-          <h4 class="formulario_title">
-            <strong>Envianos tu consulta</strong>
-          </h4><br>
+    <main>
+      <div class="contacto">
+        <div class="contacto__container">
+          <div class="logo">
+            <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
+          </div>
           
-          <label for="email" class="formulario__label">
-            <strong>CORREO ELECTRÓNICO</strong></label>
-          <input
-            name="email"
-            class="formulario__input input__email"
-            type="text"
-            placeholder="Ingresa tu e-mail"
-          />
-          <label for="nombre" class="formulario__label">
-            <strong>NOMBRE</strong></label>
-          <input
-            name="nombre"
-            class="formulario__input input__nombre"
-            type="text"
-            placeholder="Ingresa tu nombre"
-          />
-          <label for="asunto" class="formulario__label">
-            <strong>ASUNTO</strong></label>
-          <input
-            name="asunto"
-            class="formulario__input input__asunto"
-            type="text"
-            placeholder="Coloca un asunto"
-          />
-          <label for="mensaje" class="formulario__label">
-            <strong>MENSAJE</strong></label>
-          <textarea
-            name="mensaje"
-            id="input__mensaje"
-            cols="80"
-            rows="7"
-            placeholder="Tu mensaje aquí"></textarea>
-          <button 
-            type="submit" 
-            value="submit"
-            class="formulario__button"
-            onclick="return saludo()">ENVIAR
-          </button>
-        </form>
+          <form class="formulario" name="formulario" onsubmit="return validarForm()">
+            <h4 class="formulario_title">
+              <strong>Envianos tu consulta</strong>
+            </h4><br>
+            
+            <label for="email" class="formulario__label">
+              <strong>CORREO ELECTRÓNICO</strong></label>
+            <input
+              name="email"
+              class="formulario__input input__email"
+              type="text"
+              placeholder="Ingresa tu e-mail"
+            />
+            <label for="nombre" class="formulario__label">
+              <strong>NOMBRE</strong></label>
+            <input
+              name="nombre"
+              class="formulario__input input__nombre"
+              type="text"
+              placeholder="Ingresa tu nombre"
+            />
+            <label for="asunto" class="formulario__label">
+              <strong>ASUNTO</strong></label>
+            <input
+              name="asunto"
+              class="formulario__input input__asunto"
+              type="text"
+              placeholder="Coloca un asunto"
+            />
+            <label for="mensaje" class="formulario__label">
+              <strong>MENSAJE</strong></label>
+            <textarea
+              name="mensaje"
+              id="input__mensaje"
+              cols="80"
+              rows="7"
+              placeholder="Tu mensaje aquí"></textarea>
+            <button 
+              type="submit" 
+              value="submit"
+              class="formulario__button"
+              onclick="return saludo()">ENVIAR
+            </button>
+          </form>
+        </div>
+
+        <img
+          src="./assets/contacto-hero.png"
+          alt="Imagen de un profesional"
+          class="contacto__img"
+        />
       </div>
-
-      <img
-        src="./assets/contacto-hero.png"
-        alt="Imagen de un profesional"
-        class="contacto__img"
-      />
-    </div>
-
+    </main>
+    
     <footer>
       <p class="footer">&copy; WeFix 2022</p>
 
@@ -124,5 +125,6 @@
 
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
     <script src="form_contacto.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

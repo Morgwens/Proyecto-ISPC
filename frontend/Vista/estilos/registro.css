@@ -15,7 +15,7 @@ body {
 .formulario {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
 }
 
 .select {
@@ -76,5 +76,9 @@ body {
 @media (max-width: 768px) {
   .login__img {
     display: none
+  }
+
+  .formulario {
+    width: 80%;
   }
 }

@@ -32,57 +32,58 @@
         </ul>
       </div> 
       
-      <input type="checkbox" id="check">
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
 
-    <div class="login">
-      <!--Formulario-->
-      <div class="login__container">
-        <div class="login__logo">
-          <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
-        </div>
-        <form class="formulario" name="formulario" onsubmit="return validarForm()">
-          <label for="email" class="formulario__label"
-            ><strong>CORREO ELECTRÓNICO</strong></label
-          >
-          <input
-            name="email"
-            class="formulario__input input__email"
-            type="text"
-            placeholder="Correo electrónico"
-          />
-          <label for="password" class="formulario__label"
-            ><strong>CONTRASEÑA</strong></label
-          >
-          <input
-            name="password"
-            class="formulario__input-password"
-            type="password"
-            placeholder="Contraseña"
-          />
-          <div class="formulario__captions">
-            <label>
-              <input type="checkbox" checked="checked" name="remember" />
-              Recordar datos del usuario
-            </label>
-            <span><a href="#"> Olvidé mi contraseña</a></span>
+    <main>
+      <div class="login">
+        <!--Formulario-->
+        <div class="login__container">
+          <div class="login__logo">
+            <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
           </div>
-          <button type="submit" class="formulario__button">INICIAR SESIÓN</button>
-          <h5 class="formulario__registrarse">
-            ¿Todavía no tenés una cuenta? <a href="./registro.html">Registrate gratis</a>
-          </h5>
-        </form>
-      </div>
-      <!--Imagen-->
+          <form class="formulario" name="formulario" onsubmit="return validarForm()">
+            <label for="email" class="formulario__label"
+              ><strong>CORREO ELECTRÓNICO</strong></label
+            >
+            <input
+              name="email"
+              class="formulario__input input__email"
+              type="text"
+              placeholder="Correo electrónico"
+            />
+            <label for="password" class="formulario__label"
+              ><strong>CONTRASEÑA</strong></label
+            >
+            <input
+              name="password"
+              class="formulario__input-password"
+              type="password"
+              placeholder="Contraseña"
+            />
+            <div class="formulario__captions">
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Recordar datos del usuario
+              </label>
+              <span><a href="#"> Olvidé mi contraseña</a></span>
+            </div>
+            <button type="submit" class="formulario__button">INICIAR SESIÓN</button>
+            <h5 class="formulario__registrarse">
+              ¿Todavía no tenés una cuenta? <a href="./registro.html">Registrate gratis</a>
+            </h5>
+          </form>
+        </div>
+        <!--Imagen-->
 
-      <img
-        src="./assets/login-hero.png"
-        alt="Imagen de un profesional"
-        class="login__img"
-      />
-    </div>
-    
+        <img
+          src="./assets/login-hero.png"
+          alt="Imagen de un profesional"
+          class="login__img"
+        />
+      </div>
+    </main>
+        
     <footer>
       <p class="footer">&copy; WeFix 2022</p>
 
@@ -110,5 +111,6 @@
 
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
     <script src="iniciar_sesion.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>
