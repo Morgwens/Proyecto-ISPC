@@ -51,23 +51,21 @@
         
         <br>
 
-        <form class="formulario">
+        <form class="formulario" id="form">
           <label for="nombre" class="formulario__label">
             <strong>NOMBRE DE USUARIO</strong></label>
           <input 
             type="text" 
             placeholder="Ingresa un nombre" 
-            name="name" 
-            required 
-            class="formulario__input" />
+            name="name"    
+            class="formulario__input" id="nombre" />
           <label for="nombre" class="formulario__label">
             <strong>CORREO ELECTRÓNICO</strong></label>
           <input 
             type="text" 
             placeholder="Ingresa tu e-mail" 
-            name="nombre" 
-            required 
-            class="formulario__input" />
+            name="nombre"  
+            class="formulario__input"  id="email"/>
           <label for="password" class="formulario__label">
             <strong>CONTRASEÑA</strong></label>
           <input 
@@ -75,14 +73,14 @@
             placeholder="Escribe tu contraseña" 
             name="password" 
             required 
-            class="formulario__input" />
+            class="formulario__input" id="pass"/>
           <label for="password" class="formulario__label">
             <strong>REPITE CONTRASEÑA</strong></label>
           <input 
             type="password" 
             placeholder="Repite tu contraseña" 
             name="password" 
-            required class="formulario__input" />
+            required class="formulario__input" requiered/>
         
           <h4>Seleccione su categoría:</h4>
           <div class="select">
@@ -93,8 +91,9 @@
             <input type="radio" id="age2" name="age" value="40">
             <label for="age2" class="radio-p">Prestador</label><br>
           </div><br><br>
-          <button type="submit" class="formulario__button">SIGUIENTE</button>
-        </form>
+          <button type="submit" class="formulario__button" id="submit">SIGUIENTE</button>
+          <p class="warning" id="warning"></p>
+        </form>     
       </div>
     </div>
 
@@ -122,8 +121,13 @@
         </a>
       </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
+    
+  </body>    
+  <script src="registro.js"></script>
+</html>
+
     <script src="header.js"></script>
   </body>
 </html>
+
