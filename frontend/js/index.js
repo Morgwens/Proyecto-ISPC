@@ -87,5 +87,5 @@ function buscarServicio() {
 }
 
 function contactoPrestador() {
-    window.location.href = '/frontend/datos_prestador.html';
+    window.location.href = '/Proyecto-ISPC/frontend/datos_prestador.html';
 }
