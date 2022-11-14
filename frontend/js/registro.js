@@ -32,7 +32,7 @@ form.addEventListener("submit", e => {
      if (entrar) {
         advertencia.innerHTML = warning
     } else {
-        esClienteOPrestador === "cliente" ? window.location.href = '/frontend/registro_cliente.html' : window.location.href = '/frontend/registro_prestador.html'
+        esClienteOPrestador === "cliente" ? window.location.href = '/Proyecto-ISPC/frontend/registro_cliente.html' : window.location.href = '/Proyecto-ISPC/frontend/registro_prestador.html'
     }
 
 })
