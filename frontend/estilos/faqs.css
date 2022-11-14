@@ -1,0 +1,127 @@
+@import url("./style.css");
+
+main {
+  padding: 60px 0;
+}
+
+.titulo h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--main-dark-blue);
+  text-align: center;
+}
+
+.titulo h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.titulo h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--main-light-blue);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+  
+.faq-heading {  
+  font-weight: 400;
+  font-size: 17px;
+  -webkit-transition: text-indent 0.2s;
+  text-indent: 20px;
+  color: #333;
+}
+
+.faq-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #919191;
+  width:95%;
+  padding-left:20px;
+  margin-bottom:30px;
+}
+
+.faq {
+  width: 1000px;
+  margin: auto;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #E1E1E1;
+}
+
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 40px;
+  padding-top:1px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 5px;
+  height: 5px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-right: 2px solid rgba(0, 0, 0, 0.33);
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgba(255,255,255,255) !important;
+  color: #4f7351;
+  height: 225px;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type='checkbox']:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 50px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  position: fixed;
+}

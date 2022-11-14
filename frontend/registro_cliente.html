@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="dist/bootstrap-5.0.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/bootstrap-5.0.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./estilos/registro.css"/>
+    <title>Registro cliente- We Fix</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html" class="navbar">
+        <div class="navbar">
+          <img class="logo" src="./assets/Logotipo.png" alt="we-fix-logo" />
+          <h1 class="navbar">WE FIX</h1>
+        </div>
+      </a>
+
+      <div class="menu">
+        <ul class="nav sidebar-on">
+          <a href="./index.html" class="navbar">
+            <li class="navbar">Inicio</li></a>
+          <a href="./sobre_nosotros.html" class="navbar">
+            <li class="navbar">Nosotros</li></a>
+          <a href="./form_contacto.html" class="navbar">
+            <li class="navbar">Contacto</li></a>
+          <a href="./membresia.html" class="navbar">
+            <li class="navbar">Membresía</li></a>
+          <a href="./registro.html" class="navbar">
+            <li class="navbar">Registro</li></a>  
+          <a href="./iniciar_sesion.html" class="navbar">
+            <li class="navbar">Ingresar
+              <img src="./assets/avatar naranja.png" alt="avatar_login" class="avatar_login"/></li></a>
+        </ul>
+      </div>
+
+      <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
+    </header>
+
+    <main>
+      <div class="registro" align="center">
+        <div class="registro__container">
+          <div class="logo">
+            <img src="./assets/logo-index.png">
+          </div>
+          <h4 class="formulario_title"><strong>Registro de Cliente</strong></h4>
+          <br>
+
+          <form class="formulario" id="form2">
+            <label for="nombre" class="formulario__label">
+              <strong>NOMBRE</strong>
+            </label>
+            <input type="text" name="name" class="formulario__input" placeholder="Ingrese su nombre" required />
+            <label for="apellido" class="formulario__label">
+              <strong>APELLIDO</strong>
+            </label>
+            <input type="text" name="apellido" class="formulario__input" placeholder="Ingrese su apellido"  required />
+            <label for="genero" class="formulario__label">
+              <strong>GÉNERO</strong>
+            </label>
+            <select name="genero" class="formulario__input" required>
+              <option value="Femenino">Femenino</option>
+              <option value="Masculino">Masculino</option>
+            </select>
+            <label for="nacimiento" class="formulario__label">
+              <strong>FECHA DE NACIMIENTO</strong>
+            </label>
+            <input type="date" name="nacimiento" class="formulario__input" required />
+            <label for="direccion" class="formulario__label">
+              <strong>DIRECCIÓN</strong>
+            </label>
+            <input type="text" name="direccion" class="formulario__input" placeholder="Ingrese su dirección" required />
+            <label for="telefono" class="formulario__label">
+              <strong>TELÉFONO</strong>
+            </label>
+            <input type="number" name="telefono" class="formulario__input" placeholder="Ingrese su número de contacto" required />
+      
+            <button type="submit" class="formulario__button">REGISTRARSE</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p class="footer">&copy; WeFix 2022</p>
+
+      <ul class="footer">
+        <a href="./faqs.html" class="footer">
+          <li class="footer">Preguntas frecuentes</li>
+        </a>
+        <a href="./soporte.html" class="footer">
+          <li class="footer">Soporte</li>
+        </a>
+        <a href="./terminos.html" class="footer">
+          <li class="footer">Términos y condiciones</li>
+        </a>
+        <a href="./privacidad.html" class="footer">
+          <li class="footer">Privacidad y seguridad</li>
+        </a>
+      </ul>
+
+      <div class="social">
+        <a href="https://www.facebook.com/" class="footer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" class="footer">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="footer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>
