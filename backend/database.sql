@@ -1,19 +1,7 @@
-/*CREAR LA BASE DE DATOS mydb*/
-CREATE DATABASE mydb;
+/*CREAR LA BASE DE DATOS*/
+El script para la creación de la base de datos se encuentra incorporado 
+en el archivo CrearTablas.py dentro de la carpeta Modelo
 
-/*USAR LA BASE DE DATOS mydb*/
-USE mydb;
-
-/*CREAR TABLA CLIENTES*/
-CREATE TABLE `cliente` (
-  `id_cliente` int(11) NOT NULL,
-  `nombreApellido` varchar(45) NOT NULL,
-  `fechaNacimiento` date NOT NULL,
-  `genero` varchar(45) NOT NULL,
-  `email` varchar(45) NOT NULL,
-  `direccion` varchar(45) NOT NULL,
-  `telefono` int(11) NOT NULL,
-  `fecha_alta` datetime NOT NULL,
-  `fichaCliente_id_UsuarioCliente` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+Con solo ejecutar el mencionado archivo se crearán todas las tablas 
+necesarias para este proyecto.
 
