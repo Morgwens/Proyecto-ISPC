@@ -1,0 +1,37 @@
+@import url("./style.css");
+@import url("./sobre_nosotros.css");
+
+main {
+    padding: 60px;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+div h1 {
+    font-weight: 700;
+}
+
+.bg-custom {
+    background-color: rgb(0, 30, 108);
+}
+
+div.card {
+    position:static;
+    height: 300px;
+}
+
+.site-wraper {
+    padding-top: 24px;
+    padding-bottom: 5px;
+}
+
+
+  

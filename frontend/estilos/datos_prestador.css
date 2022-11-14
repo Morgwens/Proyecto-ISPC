@@ -1,0 +1,61 @@
+@import url("./style.css");
+
+main {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: var(--main-dark-blue);
+  font-weight: bolder;
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--main-light-blue);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.col-md-3 {
+  text-indent: 0.5em;   
+}
+
+.col-md-5 {
+  font-size: 1.063rem;
+  text-indent: 2em;
+  border: none;
+  border-radius: 5%;
+  background-color:#e5e5fd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto {
+  border: 1px ;
+  border-radius: 50%;
+}
+
+body {
+  /*background-image: url(../assets/banner.png);*/
+  background-repeat: no-repeat;
+  background-position-y: 5.1em;
+}

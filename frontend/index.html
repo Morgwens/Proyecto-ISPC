@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./estilos/index.css" />
+    <link rel="stylesheet" href="./estilos/card.css" />
+    <title>Inicio - We Fix</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html" class="navbar">
+        <div class="navbar">
+          <img class="logo" src="./assets/Logotipo.png" alt="we-fix-logo" />
+          <h1 class="navbar">WE FIX</h1>
+        </div>
+      </a>
+
+      <div class="menu">
+        <ul class="nav sidebar-on">
+          <a href="./index.html" class="navbar">
+            <li class="navbar">Inicio</li></a>
+          <a href="./sobre_nosotros.html" class="navbar">
+            <li class="navbar">Nosotros</li></a>
+          <a href="./form_contacto.html" class="navbar">
+            <li class="navbar">Contacto</li></a>
+          <a href="./membresia.html" class="navbar">
+            <li class="navbar">Membresía</li></a>
+          <a href="./registro.html" class="navbar">
+            <li class="navbar">Registro</li></a>  
+          <a href="./iniciar_sesion.html" class="navbar">
+            <li class="navbar">Ingresar
+              <img src="./assets/avatar naranja.png" alt="avatar_login" class="avatar_login"/></li></a>
+        </ul>
+      </div>
+
+      <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
+    </header>
+
+    <div class="banner">
+    </div>
+
+    <main>
+      <div class="central">
+        <div class="buscador__inicio">
+          <input
+            class="inputBuscador"
+            type="text"
+            placeholder="Buscar Servicio"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+            type="submit"
+            onclick="buscarServicio()"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" 
+            />
+          </svg>
+          <h5 style="text-align: center; font-size: 0.875rem; margin-top: 0.7rem;">Ingresa alguna de las categorías</h5>
+        </div>
+
+        <h2 class="index">Bienvenido Carlos ¿Qué estás buscando?</h2>
+
+        <div class="iconos__inicio">
+          <div class="un-icono" onclick="verElectricidad()">
+            <img class="logo-servicio" src="./assets/enchufe.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Electricidad</h4>
+          </div>
+          <div class="un-icono" onclick="verGas()">
+            <img class="logo-servicio" src="./assets/fuego.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Gas</h4>
+          </div>
+          <div class="un-icono" onclick="verFontaneria()">
+            <img class="logo-servicio" src="./assets/herramientas.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Fontanería</h4>
+          </div>
+          <div class="un-icono" onclick="verPintura()">
+            <img class="logo-servicio" src="./assets/rodillo-de-pintura.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Pintura</h4>
+          </div>
+          <div class="un-icono" onclick="verCarpinteria()">
+              <img class="logo-servicio" src="./assets/serrucho.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Carpintería</h4>
+          </div>
+          <div class="un-icono" onclick="verJardin()">
+            <img class="logo-servicio" src="./assets/cortacesped.png" alt="logo-Serrucho"/>
+            <h6 class="titulo-icon">Jardín</h4>
+          </div>
+        </div>
+
+        <div class="cartas">
+            <div class="carta">
+              <div class="datosCarta">
+                <input type="checkbox" id="btn-modal">
+                <div class="modal">
+                  <div class="card">
+                    <div class="header">
+                      <label for="btn-modal">X</label>
+                      <a href="#">
+                        <img src="./assets/fotoPrestador.jpg">
+                      </a>
+                      <h2>Jose Villegas</h2>
+                      <h4> Electricista - Reparaciones en General</h4>
+                      <h4>Dirección: Calle Falsa 1234</h4>
+                    </div>
+                    <div class="descripcion">
+                      <p>Instalación y mantenimiento de red hogareña. Reparaciones.
+                        Presupuestos. Matricula Técnica N° 0303456.
+                      </p>
+                      <div class="social">
+                        <a href="#"><img src="./assets/facebook.png" id="fb"></a>
+                        <a href="#"><img src="./assets/instagram.png" id="ig"></a>
+                        <a href="#"><img src="./assets/whatsapp.png" id="wsp"></a>
+                        <a href="#"><img src="./assets/share.png" id="compartir"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>         
+            </div> 
+          <div class="carta-prestador serv-carpinteria" >
+          <input type="checkbox" id="btn-modal" >  
+            <img class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Jose Villegas</h3>
+                <p>Carpintería</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div class="valoración">
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>          
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-electricidad">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              
+              <div class="texto">
+                <h3>Juan Perez</h3>
+                <p>Electricidad</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-pintura">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Diego Lopez</h3>
+                <p>Pintura</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-gas">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Esteban Alvares</h3>
+                <p>Gas</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-electricidad">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Diego Sosa</h3>
+                <p>Electricidad</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-gas">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Lucas Rodriguez</h3>
+                <p>Gas</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-fontaneria">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Fernando Castillo</h3>
+                <p>Fontanería</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-jardin">
+            <img
+              class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>René Pomarola</h3>
+                <p>Jardín</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+          <div class="carta-prestador serv-carpinteria">
+            <img class="foto-prestador"
+              src="./assets/fotoPrestador.jpg"
+              alt="foto-prestador"
+            />
+            <div class="datosCarta">
+              <div class="texto">
+                <h3>Mario Cejas</h3>
+                <p>Carpintería</p> 
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div class="valoración">
+                <p>Valoración:</p>
+                <img
+                  class="logo-estrellas"
+                  src="./assets/clasificacion.png"
+                  alt="logo-estrellas"
+                />
+              </div>
+            </div>
+            <div class="contactar" onclick="contactoPrestador()">
+              <img 
+                class="logo-contacto" 
+                src="./assets/phone.png" 
+                alt="logo-contacto"
+              >
+              <p>Contactar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+   
+    <footer>
+      <p class="footer">&copy; WeFix 2022</p>
+
+      <ul class="footer">
+        <a href="./faqs.html" class="footer">
+          <li class="footer">Preguntas frecuentes</li>
+        </a>
+        <a href="./soporte.html" class="footer">
+          <li class="footer">Soporte</li>
+        </a>
+        <a href="./terminos.html" class="footer">
+          <li class="footer">Términos y condiciones</li>
+        </a>
+        <a href="./privacidad.html" class="footer">
+          <li class="footer">Privacidad y seguridad</li>
+        </a>
+      </ul>
+
+      <div class="social">
+        <a href="https://www.facebook.com/" class="footer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" class="footer">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="footer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
