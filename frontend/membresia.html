@@ -7,7 +7,7 @@
     <title>Membresía - We Fix</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./estilos/header_footer.css"/>
-    <link rel="stylesheet" href="/PaginaWebWe-Fix/Vista/estilos/membresia.css">
+    <link rel="stylesheet" href="./estilos/membresia.css">
   </head>
 
   <body>
@@ -18,58 +18,60 @@
           <h1 class="navbar">WE FIX</h1>
         </div>
       </a>
-      
+
       <div class="menu">
-        <ul class="nav">
+        <ul class="nav sidebar-on">
           <a href="./index.html" class="navbar">
             <li class="navbar">Inicio</li></a>
           <a href="./sobre_nosotros.html" class="navbar">
-            <li class="navbar">Sobre nosotros</li></a>
+            <li class="navbar">Nosotros</li></a>
           <a href="./form_contacto.html" class="navbar">
             <li class="navbar">Contacto</li></a>
+          <a href="./membresia.html" class="navbar">
+            <li class="navbar">Membresía</li></a>
+          <a href="./registro.html" class="navbar">
+            <li class="navbar">Registro</li></a>  
           <a href="./iniciar_sesion.html" class="navbar">
             <li class="navbar">Ingresar
               <img src="./assets/avatar naranja.png" alt="avatar_login" class="avatar_login"/></li></a>
         </ul>
       </div>
-            
+
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
     
     <main>
-      <div class="title-cards">
-        <h2>Membresías</h2>
-      </div>
+      <h2 class="section-title">Membresías</h2>
 
       <div class="container-card">
         <div class="card">
           <figure>
-            <img src="/PaginaWebWe-Fix/Vista/assets/bronze.jpg" alt="medalla de bronce">
+            <img src="./assets/bronze.jpg" alt="medalla de bronce">
           </figure>
           <div class="contenido-card">
             <h3>Bronce</h3>
             <p>Accede a un 5% de descuento en la contratación de servicios</p>
-            <a href="#">Leer Màs</a>
+            <a href="#">Leer Más</a>
           </div>
         </div>
         <div class="card">
           <figure>
-            <img src="/PaginaWebWe-Fix/Vista/assets/silver.jpg" alt="medalla de plata">
+            <img src="./assets/silver.jpg" alt="medalla de plata">
           </figure>
           <div class="contenido-card">
             <h3>Plata</h3>
             <p>Accede hasta un 10% de descuento en la contratación de los servicios</p>
-            <a href="#">Leer Màs</a>
+            <a href="#">Leer Más</a>
           </div>
         </div>
         <div class="card">
           <figure>
-            <img src="/PaginaWebWe-Fix/Vista/assets/gold.jpg" alt="medalla de oro">
+            <img src="./assets/gold.jpg" alt="medalla de oro">
           </figure>
           <div class="contenido-card">
             <h3>Oro</h3>
             <p>Accede hasta un 25% de descuento en la contratación de servicios</p>
-            <a href="#">Leer Màs</a>
+            <a href="#">Leer Más</a>
           </div>
         </div>
       </div>
@@ -79,8 +81,14 @@
       <p class="footer">&copy; WeFix 2022</p>
 
       <ul class="footer">
+        <a href="./faqs.html" class="footer">
+          <li class="footer">Preguntas frecuentes</li>
+        </a>
+        <a href="./soporte.html" class="footer">
+          <li class="footer">Soporte</li>
+        </a>
         <a href="./terminos.html" class="footer">
-          <li class="footer">Terminos y condiciones</li>
+          <li class="footer">Términos y condiciones</li>
         </a>
         <a href="./privacidad.html" class="footer">
           <li class="footer">Privacidad y seguridad</li>
@@ -101,6 +109,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
-    <script src="header.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

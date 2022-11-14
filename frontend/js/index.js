@@ -72,20 +72,20 @@ function buscarServicio() {
     if (buscar == "gas") {
         verGas();
     }
-    if (buscar == "fontaneria") {
+    if (buscar == "fontaneria" || buscar == "fontanería") {
         verFontaneria();
     }
     if (buscar == "pintura") {
         verPintura();
     }
-    if (buscar == "carpinteria") {
+    if (buscar == "carpinteria" || buscar == "carpintería") {
         verCarpinteria();
     }
-    if (buscar == "jardin") {
+    if (buscar == "jardin" || buscar == "jardín") {
         verJardin();
     }
 }
 
 function contactoPrestador() {
-    window.location.href = './datos_prestador.html';
+    window.location.href = '/frontend/datos_prestador.html';
 }

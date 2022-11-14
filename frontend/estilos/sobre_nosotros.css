@@ -1,7 +1,7 @@
 @import url("./style.css");
 
 /* section */
-section {
+main {
   padding: 60px;
   overflow: hidden;
 }

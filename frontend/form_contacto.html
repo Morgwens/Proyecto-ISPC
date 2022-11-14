@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./estilos/iniciar_sesion.css"/>
-    <title>Iniciar sesión - We Fix</title>
+    <link rel="stylesheet" href="./estilos/form_contacto.css" />
+    <title>Contacto - WeFix</title>
   </head>
 
   <body>
@@ -17,79 +17,101 @@
           <h1 class="navbar">WE FIX</h1>
         </div>
       </a>
-      
+
       <div class="menu">
-        <ul class="nav">
+        <ul class="nav sidebar-on">
           <a href="./index.html" class="navbar">
             <li class="navbar">Inicio</li></a>
           <a href="./sobre_nosotros.html" class="navbar">
-            <li class="navbar">Sobre nosotros</li></a>
+            <li class="navbar">Nosotros</li></a>
           <a href="./form_contacto.html" class="navbar">
             <li class="navbar">Contacto</li></a>
+          <a href="./membresia.html" class="navbar">
+            <li class="navbar">Membresía</li></a>
+          <a href="./registro.html" class="navbar">
+            <li class="navbar">Registro</li></a>  
           <a href="./iniciar_sesion.html" class="navbar">
             <li class="navbar">Ingresar
               <img src="./assets/avatar naranja.png" alt="avatar_login" class="avatar_login"/></li></a>
         </ul>
-      </div> 
-      
+      </div>
+
       <label for="check" class="check-btn"><img src="./assets/menu-icon.png" alt=""></label>
     </header>
 
     <main>
-      <div class="login">
-        <!--Formulario-->
-        <div class="login__container">
-          <div class="login__logo">
+      <div class="contacto">
+        <div class="contacto__container">
+          <div class="logo">
             <img src="./assets/logo-index.png" alt="Logotipo de WeFix" />
           </div>
+          
           <form class="formulario" name="formulario" onsubmit="return validarForm()">
-            <label for="email" class="formulario__label"
-              ><strong>CORREO ELECTRÓNICO</strong></label
-            >
+            <h4 class="formulario_title">
+              <strong>Envianos tu consulta</strong>
+            </h4><br>
+            
+            <label for="email" class="formulario__label">
+              <strong>CORREO ELECTRÓNICO</strong></label>
             <input
               name="email"
               class="formulario__input input__email"
               type="text"
-              placeholder="Correo electrónico"
+              placeholder="Ingresa tu e-mail"
             />
-            <label for="password" class="formulario__label"
-              ><strong>CONTRASEÑA</strong></label
-            >
+            <label for="nombre" class="formulario__label">
+              <strong>NOMBRE</strong></label>
             <input
-              name="password"
-              class="formulario__input-password"
-              type="password"
-              placeholder="Contraseña"
+              name="nombre"
+              class="formulario__input input__nombre"
+              type="text"
+              placeholder="Ingresa tu nombre"
             />
-            <div class="formulario__captions">
-              <label>
-                <input type="checkbox" checked="checked" name="remember" />
-                Recordar datos del usuario
-              </label>
-              <span><a href="#"> Olvidé mi contraseña</a></span>
-            </div>
-            <button type="submit" class="formulario__button">INICIAR SESIÓN</button>
-            <h5 class="formulario__registrarse">
-              ¿Todavía no tenés una cuenta? <a href="./registro.html">Registrate gratis</a>
-            </h5>
+            <label for="asunto" class="formulario__label">
+              <strong>ASUNTO</strong></label>
+            <input
+              name="asunto"
+              class="formulario__input input__asunto"
+              type="text"
+              placeholder="Coloca un asunto"
+            />
+            <label for="mensaje" class="formulario__label">
+              <strong>MENSAJE</strong></label>
+            <textarea
+              name="mensaje"
+              id="input__mensaje"
+              cols="80"
+              rows="7"
+              placeholder="Tu mensaje aquí"></textarea>
+            <button 
+              type="submit" 
+              value="submit"
+              class="formulario__button"
+              onclick="return saludo()">ENVIAR
+            </button>
           </form>
         </div>
-        <!--Imagen-->
 
         <img
-          src="./assets/login-hero.png"
+          src="./assets/contacto-hero.png"
           alt="Imagen de un profesional"
-          class="login__img"
+          class="contacto__img"
         />
       </div>
     </main>
-        
+    
     <footer>
       <p class="footer">&copy; WeFix 2022</p>
 
       <ul class="footer">
+        <a href="./faqs.html" class="footer">
+          <li class="footer">Preguntas frecuentes</li>
+        </a>
+        <a href="./soporte.html" class="footer">
+          <li class="footer">Soporte</li>
+        </a>
         <a href="./terminos.html" class="footer">
-          <li class="footer">Terminos y condiciones</li>
+          <li class="footer">Términos y condiciones</li>
         </a>
         <a href="./privacidad.html" class="footer">
           <li class="footer">Privacidad y seguridad</li>
@@ -110,7 +132,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
-    <script src="iniciar_sesion.js"></script>
-    <script src="header.js"></script>
+    <script src="./js/form_contacto.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

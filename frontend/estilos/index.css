@@ -128,6 +128,10 @@ div.texto {
   width: 40px;
 }
 
+.oculto {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 200px;

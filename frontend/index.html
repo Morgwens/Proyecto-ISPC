@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./estilos/index.css" />
+    <link rel="stylesheet" href="./estilos/card.css" />
     <title>Inicio - We Fix</title>
   </head>
 
@@ -24,15 +25,15 @@
       </a>
 
       <div class="menu">
-        <ul class="nav">
+        <ul class="nav sidebar-on">
           <a href="./index.html" class="navbar">
             <li class="navbar">Inicio</li></a>
           <a href="./sobre_nosotros.html" class="navbar">
-            <li class="navbar">Sobre nosotros</li></a>
+            <li class="navbar">Nosotros</li></a>
           <a href="./form_contacto.html" class="navbar">
             <li class="navbar">Contacto</li></a>
           <a href="./membresia.html" class="navbar">
-            <li class="navbar">Membresía</li></a>  
+            <li class="navbar">Membresía</li></a>
           <a href="./registro.html" class="navbar">
             <li class="navbar">Registro</li></a>  
           <a href="./iniciar_sesion.html" class="navbar">
@@ -72,7 +73,7 @@
           <h5 style="text-align: center; font-size: 0.875rem; margin-top: 0.7rem;">Ingresa alguna de las categorías</h5>
         </div>
 
-        <h2 class="index">¡Bienvenido! ¿Qué estás buscando?</h2>
+        <h2 class="index">Bienvenido Carlos ¿Qué estás buscando?</h2>
 
         <div class="iconos__inicio">
           <div class="un-icono" onclick="verElectricidad()">
@@ -102,7 +103,37 @@
         </div>
 
         <div class="cartas">
-          <div class="carta-prestador serv-carpinteria">
+            <div class="carta">
+              <div class="datosCarta">
+                <input type="checkbox" id="btn-modal">
+                <div class="modal">
+                  <div class="card">
+                    <div class="header">
+                      <label for="btn-modal">X</label>
+                      <a href="#">
+                        <img src="./assets/fotoPrestador.jpg">
+                      </a>
+                      <h2>Jose Villegas</h2>
+                      <h4> Electricista - Reparaciones en General</h4>
+                      <h4>Dirección: Calle Falsa 1234</h4>
+                    </div>
+                    <div class="descripcion">
+                      <p>Instalación y mantenimiento de red hogareña. Reparaciones.
+                        Presupuestos. Matricula Técnica N° 0303456.
+                      </p>
+                      <div class="social">
+                        <a href="#"><img src="./assets/facebook.png" id="fb"></a>
+                        <a href="#"><img src="./assets/instagram.png" id="ig"></a>
+                        <a href="#"><img src="./assets/whatsapp.png" id="wsp"></a>
+                        <a href="#"><img src="./assets/share.png" id="compartir"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>         
+            </div> 
+          <div class="carta-prestador serv-carpinteria" >
+          <input type="checkbox" id="btn-modal" >  
             <img class="foto-prestador"
               src="./assets/fotoPrestador.jpg"
               alt="foto-prestador"
@@ -112,6 +143,10 @@
                 <h3>Jose Villegas</h3>
                 <p>Carpintería</p>
               </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
               <div class="valoración">
                 <p>Valoración:</p>
                 <img
@@ -120,7 +155,7 @@
                   alt="logo-estrellas"
                 />
               </div>
-            </div>
+            </div>          
             <div class="contactar" onclick="contactoPrestador()">
               <img 
                 class="logo-contacto" 
@@ -137,11 +172,15 @@
               alt="foto-prestador"
             />
             <div class="datosCarta">
+              
               <div class="texto">
                 <h3>Juan Perez</h3>
                 <p>Electricidad</p>
               </div>
-              
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
               <div>
                 <p>Valoración:</p>
                 <img
@@ -170,6 +209,10 @@
               <div class="texto">
                 <h3>Diego Lopez</h3>
                 <p>Pintura</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
               </div>
               <div>
                 <p>Valoración:</p>
@@ -201,6 +244,10 @@
                 <p>Gas</p>
               </div>
               <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
                 <p>Valoración:</p>
                 <img
                   class="logo-estrellas"
@@ -228,6 +275,10 @@
               <div class="texto">
                 <h3>Diego Sosa</h3>
                 <p>Electricidad</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
               </div>
               <div>
                 <p>Valoración:</p>
@@ -259,6 +310,10 @@
                 <p>Gas</p>
               </div>
               <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
                 <p>Valoración:</p>
                 <img
                   class="logo-estrellas"
@@ -286,6 +341,10 @@
               <div class="texto">
                 <h3>Fernando Castillo</h3>
                 <p>Fontanería</p>
+              </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
               </div>
               <div>
                 <p>Valoración:</p>
@@ -317,6 +376,10 @@
                 <p>Jardín</p>
               </div>
               <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
+              <div>
                 <p>Valoración:</p>
                 <img
                   class="logo-estrellas"
@@ -344,6 +407,10 @@
                 <h3>Mario Cejas</h3>
                 <p>Carpintería</p> 
               </div>
+              <div>
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">Ver</label>
+              </div>
               <div class="valoración">
                 <p>Valoración:</p>
                 <img
@@ -370,8 +437,14 @@
       <p class="footer">&copy; WeFix 2022</p>
 
       <ul class="footer">
+        <a href="./faqs.html" class="footer">
+          <li class="footer">Preguntas frecuentes</li>
+        </a>
+        <a href="./soporte.html" class="footer">
+          <li class="footer">Soporte</li>
+        </a>
         <a href="./terminos.html" class="footer">
-          <li class="footer">Terminos y condiciones</li>
+          <li class="footer">Términos y condiciones</li>
         </a>
         <a href="./privacidad.html" class="footer">
           <li class="footer">Privacidad y seguridad</li>
@@ -392,7 +465,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/53bd38247d.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script src="header.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
