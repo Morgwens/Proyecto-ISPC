@@ -17,7 +17,7 @@ María Fernández (Equipo de Desarrollo) https://github.com/mariiifer <br>
 Juan Fernández (Equipo de Desarrollo) https://github.com/JuanAlejandroFernandez <br>
 Silvana Sosa Escalante (Equipo de Desarrollo) https://github.com/vanita88 <br>
 
-<br>![68747470733a2f2f696d672e736869656c64732e696f2f62616467652f637373332d2532333135373242362e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465](https://user-images.githubusercontent.com/95719903/201946695-c2f9390a-67e4-4dc2-96d9-98498cd2308a.svg)
+<br>
 
 
 
